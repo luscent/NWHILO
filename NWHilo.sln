@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{6CBA091E-3172-4E7A-9206-B66310C85C25}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{A4CFF000-9A0C-49F1-ABE1-D716923113F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6CBA091E-3172-4E7A-9206-B66310C85C25}.Debug|Win32.ActiveCfg = Debug|Win32
-		{6CBA091E-3172-4E7A-9206-B66310C85C25}.Debug|Win32.Build.0 = Debug|Win32
-		{6CBA091E-3172-4E7A-9206-B66310C85C25}.Release|Win32.ActiveCfg = Release|Win32
-		{6CBA091E-3172-4E7A-9206-B66310C85C25}.Release|Win32.Build.0 = Release|Win32
+		{A4CFF000-9A0C-49F1-ABE1-D716923113F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4CFF000-9A0C-49F1-ABE1-D716923113F6}.Debug|Win32.Build.0 = Debug|Win32
+		{A4CFF000-9A0C-49F1-ABE1-D716923113F6}.Release|Win32.ActiveCfg = Release|Win32
+		{A4CFF000-9A0C-49F1-ABE1-D716923113F6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
