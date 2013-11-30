@@ -30,6 +30,7 @@
 // Commonly used Headers
 
 #include "ComPtr.h"
+#include "ComHelpers.h"
 #include "AnimationUtility.h"
 
 #ifndef HINST_THISCOMPONENT
