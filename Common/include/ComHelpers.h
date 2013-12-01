@@ -6,28 +6,16 @@
 
 template<class T>
 HRESULT AssignToOutputPointer(T** pp, const ComPtr<T> &p)
+//
 {
 	//assert pp is non-zero
-	assert(pp)
+	assert(pp);
 	*pp = p;
 
-	if( nullptr != (*pp))
+	if( nullptr != (*pp) )
 	{
 		(*pp)->AddRef();
 	}
 
 	return S_OK;
 }
-
-//template<class T>
-//HRESULT AssignToOutputPointer(T** pp, const ComPtr<T> &p)
-//{
-//    assert(pp);
-//    *pp = p;
-//    if ( nullptr != (*pp) )
-//    {
-//        (*pp)->AddRef();
-//    }
-//
-//    return S_OK;
-//}

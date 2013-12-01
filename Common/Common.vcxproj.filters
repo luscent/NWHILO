@@ -30,6 +30,18 @@
     <ClInclude Include="include\ComHelpers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowLayoutInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\AnimationUtility.cpp">
