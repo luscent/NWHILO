@@ -41,11 +41,14 @@ namespace NWHilo
 			HRESULT __stdcall SetZOrder(__in NWHilo::WidnowApiHelpers::IWindow *windowInsertAfter);
 			HRESULT __stdcall SetZOrder(__in ZOrderPlacement placement);
 			HRESULT __stdcall GetWindowHandle(__out HWND* hwnd);
-			HRESULT __stdcall GetParentWindowHandle(
-
+			HRESULT __stdcall GetParentWindowHandle(__out HWND* hwnd);
+			HRESULT __stdcall SetWindowHandle(__in HWND hwnd);
+			HRESULT __stdcall GetMessageHandler(__out IWindowMessageHandler** windowMessageHandler);
+			HRESULT __stdcall SetMessageHandler(__in IWindowMessageHandler* windowMessageHandler);
+			HRESULT __stdcall GetClientRect(__out RECT* clientRect);
+			HRESULT __stdcall SetCapture();
+			HRESULT __stdcall SetFocus();
+			HRESULT __stdcall IsMouseCaptured(__out bool* isMouseCaptured);
 		};
-
 	}
-
-
 }
