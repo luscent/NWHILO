@@ -33,6 +33,7 @@
 #include "ComHelpers.h"
 #include "AnimationUtility.h"
 #include "window.h"
+#include "sharedobject.h"
 
 #ifndef HINST_THISCOMPONENT
 EXTERN_C IMAGE_DOS_HEADER __ImageBase;

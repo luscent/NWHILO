@@ -2,7 +2,7 @@
 
 #include "window.h"
 
-using namespace NWHilo::WidnowApiHelpers;
+using namespace NWHilo::WindowApiHelpers;
 
 [uuid("76A340DC-CBAB-4E17-BD00-7A5DAC626AD2")]
 __interface IWindowLayout : public IUnknown

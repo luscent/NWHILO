@@ -75,6 +75,7 @@
     <ClInclude Include="include\ComHelpers.h" />
     <ClInclude Include="include\ComPtr.h" />
     <ClInclude Include="include\Header.h" />
+    <ClInclude Include="include\sharedobject.h" />
     <ClInclude Include="include\window.h" />
     <ClInclude Include="include\WindowLayout.h" />
     <ClInclude Include="include\WindowLayoutInterface.h" />

@@ -1,24 +1,15 @@
 #pragma once
 
+using namespace NWHilo::WindowApiHelpers;
+
 
 namespace NWHilo
 {
-	namespace WindowApiHelpers
+	namespace WindowAPIHelpers
 	{
-		enum ZOrderPlacement
+		class Window : public IWindow
 		{
-			Top = 0,
-			Bottom = 1,
-			TopMost = -1,
-			NonTopMost = -2
-		};
-
-		__interface IWindowMessageHandler;
-
-
-		[uuid("8A7A4298-2E4C-47A6-AFB4-60A51DE05EB5")]
-		__interface IWindow : public IUnknown
-		{
+		public:
 			HRESULT __stdcall Show(__in bool isVisible);
 			HRESULT __stdcall RedrawWindow();
 			HRESULT __stdcall RedrawWindow(__in bool eraseBackground);
@@ -49,6 +40,27 @@ namespace NWHilo
 			HRESULT __stdcall SetCapture();
 			HRESULT __stdcall SetFocus();
 			HRESULT __stdcall IsMouseCaptured(__out bool* isMouseCaptured);
+
+		protected:
+			Window();
+			virtual ~Window();
+
+			inline bool QueryInterface(const IID &iid, void **object)
+			{
+				return CastHelpers<IWindow>::CastTo(iid, this, object);
+			}
+
+		private:
+			HWND m_hWnd;
+			HICON m_smallIcon;
+			HICON m_largeIcon;
+			ComPtr<IWindowMessageHandler> m_messageHandler;
+			std::wstring m_title;
+
 		};
+
+
 	}
+
+
 }
