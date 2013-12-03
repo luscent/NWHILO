@@ -5,7 +5,7 @@ using namespace NWHilo::WindowApiHelpers;
 
 namespace NWHilo
 {
-	namespace WindowAPIHelpers
+	namespace WindowApiHelpers
 	{
 		class Window : public IWindow
 		{
@@ -45,10 +45,11 @@ namespace NWHilo
 			Window();
 			virtual ~Window();
 
-			inline bool QueryInterface(const IID &iid, void **object)
+			inline bool QueryInterfaceHelper(const IID& iid, void **ppvObject)
 			{
-				return CastHelpers<IWindow>::CastTo(iid, this, object);
+				return CastHelper<IWindow>::CastTo(iid, this, ppvObject);
 			}
+
 
 		private:
 			HWND m_hWnd;

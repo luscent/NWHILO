@@ -31,7 +31,7 @@ namespace NWHilo
 			HRESULT __stdcall SetSmallIcon(__in HICON* icon);
 			HRESULT __stdcall GetSize(__out unsigned int* pixelWidth,
 				                      __out unsigned int* pixelHeight);
-			HRESULT __stdcall SetSize(__in unsigned int pixedWidth,
+			HRESULT __stdcall SetSize(__in unsigned int pixelWidth,
 				                      __in unsigned int pixelHeight);
 			HRESULT __stdcall SetPosition(__in unsigned int posX,
 				                          __in unsigned int posY);

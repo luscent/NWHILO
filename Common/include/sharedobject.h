@@ -96,12 +96,14 @@ public:
 		{
 		}
 
+		//RValue로 바로 전달
 		template<class TArg1>
 		SharedObject(TArg1 &&arg1) 
 			: T(arg1), m_refCount(0)
 		{
 		}
 
+		//Rvalue Argument1, Argument2
 		template <class TArg1, class TArg2>
 		SharedObject(TArg1 &&arg1, TArg2 &&arg2)
 			: T(arg1, arg2), m_refCount(0)
@@ -117,7 +119,7 @@ public:
 			}
 			
 			*ppvObject = nullptr;
-
+			
 			if(T::QueryInterfaceHelper(iid, ppvObject))
 			{
 				static_cast<IUnknown *>(*ppvObject)->AddRef();
@@ -127,10 +129,40 @@ public:
 			return E_NOINTERFACE;
 		}
 
+		unsigned long __stdcall AddRef()
+		{
+			return static_cast<unsigned long>(
+				InterlockedIncrement(reinterpret_cast<long*>(&m_refCount)));
+		}
 
+		unsigned long __stdcall Release()
+		{
+			unsigned long refCount =  static_case<unsigned long>(
+				InterlockedDecrement(reinterpret_cast<long*>(&m_refCount)));
 
+			if(refCount == 0)
+				delete this;
+
+			return refCount;
+		}
 private:
 	unsigned long m_refCount;
 
 
+};
+
+
+template <typename I>
+struct CastHelper
+{
+	template <typename T>
+	static bool CastTo(const IID &iid, T* objPtr, void **interfacePtr)
+	{
+		if(__uuidof(I) == iid || IID_IUnknown  == iid)
+		{
+			*interfacePtr = static_cast<I*>(objPtr);
+			return true;
+		}
+		return false;
+	}
 };
