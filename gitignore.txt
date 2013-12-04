@@ -2,3 +2,5 @@ ipch/
 *.sdf
 Debug/
 Common/Debug/
+ipch/
+
