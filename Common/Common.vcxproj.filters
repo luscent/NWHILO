@@ -42,12 +42,21 @@
     <ClInclude Include="include\window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\sharedobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\windowmessagehandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\AnimationUtility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\windowsImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

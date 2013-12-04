@@ -75,14 +75,17 @@
     <ClInclude Include="include\ComHelpers.h" />
     <ClInclude Include="include\ComPtr.h" />
     <ClInclude Include="include\Header.h" />
+    <ClInclude Include="include\sharedobject.h" />
     <ClInclude Include="include\window.h" />
     <ClInclude Include="include\WindowLayout.h" />
     <ClInclude Include="include\WindowLayoutInterface.h" />
+    <ClInclude Include="include\windowmessagehandler.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\AnimationUtility.cpp" />
+    <ClCompile Include="source\windowsImpl.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
