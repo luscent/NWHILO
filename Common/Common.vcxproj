@@ -74,6 +74,7 @@
     <ClInclude Include="include\AnimationUtility.h" />
     <ClInclude Include="include\ComHelpers.h" />
     <ClInclude Include="include\ComPtr.h" />
+    <ClInclude Include="include\direct2dUtility.h" />
     <ClInclude Include="include\Header.h" />
     <ClInclude Include="include\sharedobject.h" />
     <ClInclude Include="include\window.h" />
@@ -85,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\AnimationUtility.cpp" />
+    <ClCompile Include="source\windowmessagehandlerimpl.cpp" />
     <ClCompile Include="source\windowsImpl.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

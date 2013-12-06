@@ -16,10 +16,11 @@ namespace NWHilo
 			HRESULT __stdcall UpdateWindow();
 			HRESULT __stdcall Close();
 			HRESULT __stdcall GetTitle(__out std::wstring* title);
+			HRESULT __stdcall SetTitle(__in const std::wstring& title);
 			HRESULT __stdcall GetLargeIcon(__out HICON* icon);
-			HRESULT __stdcall SetLargeIcon(__in HICON* icon);
+			HRESULT __stdcall SetLargeIcon(__in HICON icon);
 			HRESULT __stdcall GetSmallIcon(__out HICON* icon);
-			HRESULT __stdcall SetSmallIcon(__in HICON* icon);
+			HRESULT __stdcall SetSmallIcon(__in HICON icon);
 			HRESULT __stdcall GetSize(__out unsigned int* pixelWidth,
 				                      __out unsigned int* pixelHeight);
 			HRESULT __stdcall SetSize(__in unsigned int pixedWidth,
