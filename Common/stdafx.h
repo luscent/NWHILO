@@ -34,7 +34,8 @@
 #include "AnimationUtility.h"
 #include "window.h"
 #include "sharedobject.h"
-#include "windowmessagehandler.h"
+#include "WindowsMessageHandler.h"
+#include "Direct2DUtility.h"
 
 #ifndef HINST_THISCOMPONENT
 EXTERN_C IMAGE_DOS_HEADER __ImageBase;

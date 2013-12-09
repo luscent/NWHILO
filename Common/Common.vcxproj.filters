@@ -45,10 +45,13 @@
     <ClInclude Include="include\sharedobject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\windowmessagehandler.h">
+    <ClInclude Include="include\direct2dUtility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\direct2dUtility.h">
+    <ClInclude Include="include\windowsMessageHandlerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WindowsMessageHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
